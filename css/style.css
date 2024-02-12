@@ -62,7 +62,7 @@ main .container_main {
 
 main .containter_galeria {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center; }
@@ -394,7 +394,7 @@ form.form_contact input[type="button"]:hover {
       width: 100%;
       text-align: justify; }
   main .containter_galeria {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr; }
   main .containter_productos {
     display: grid;

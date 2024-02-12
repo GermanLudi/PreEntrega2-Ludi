@@ -31,7 +31,7 @@ header{
     }
 }
         /*FOOTER */
-        footer{
+footer{
             .container_footer{
                 display: grid;
                 grid-template-columns: repeat(5,1fr);
@@ -46,7 +46,7 @@ header{
                     width: 40px;        
                 }
             }
-        }
+}
             /* TODOS LOS MAIN PAGES */
 main{
     .titulo_index{
@@ -82,7 +82,7 @@ main{
     //MAIN GALERIA
     .containter_galeria{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
         align-items: center;
@@ -575,7 +575,7 @@ main{
             }
         }
         .containter_galeria{
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(2,1fr);
             grid-template-rows: 1fr;        
         }
         .containter_productos{
