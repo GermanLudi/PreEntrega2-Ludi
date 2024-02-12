@@ -158,19 +158,39 @@ main{
             }
         }
         
-    }  
-}
-
-.container_acerca_de h2{
-    text-align: center;
-    color: brown;
-}
-
-
-
-
-.container_contacto{
-    padding: 50px;
+    }
+    //MAIN PRODUCTOS
+    .containter_productos{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        div {
+            img{
+            width: 100%;
+            height: 100%;
+            padding: 1%;
+            }
+        }    
+    }
+    //MAIN CONTACTO
+    .container_contacto{
+        padding: 5%;
+        display: grid;
+        grid-template-columns: 1fr;
+        .container_google_maps{
+            iframe{
+                width: 100%;
+            }     
+        }
+        .container_form{
+            width: 100%;
+            .form_wrap{
+                width: 100%;
+                height: 80%;               
+            }
+        }
+    }
 }
 
 @font-face {
@@ -510,20 +530,32 @@ main{
             }
             
         }
+        .containter_productos{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            div {
+                img{
+                width: 100%;
+                height: 100%;
+                padding: 1%;
+                }
+            }    
+        }  
     }     
 }
 
   /* MQ para Tablets y phablets */
   @media screen and (min-width:576px)and(max-width: 767px){
-    body{
-        background-color: tomato;
-    }
+    // body{
+    //     background-color: tomato;
+    // }
     main{
         .titulo_index{
             font-size: 33px;            
         }
         .titulo{
-            font-size: 33px;
+            font-size: 40px;
         }
         .container_main{
             grid-template-columns: 1fr; 
@@ -542,10 +574,57 @@ main{
                 text-align: justify;
             }
         }
-    }
-    
-    .containter_galeria{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1fr;        
-    }
+        .containter_galeria{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;        
+        }
+        .containter_productos{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            div {
+                img{
+                width: 100%;
+                height: 100%;
+                padding: 1%;
+                }
+            }    
+        }
+        .container_form{
+            .form_wrap{
+                .cantact_info{
+                    display: none;
+                }
+                .form_contact{
+                    width: 100%;
+                    h2{
+                        font-size: 25px;
+                    }
+                    font-size: large;
+                }
+            }
+        }
+    }    
+}
+
+  /* MQ para mobile */
+  @media screen and (min-width:100px)and(max-width: 400px){
+    // body{
+    //     background-color:silver;
+    // }
+    main{
+        .container_form{
+            .form_wrap{
+                .cantact_info{
+                    display: none;
+                }
+                .form_contact{
+                    width: 100%;
+                    h2{
+                        font-size: 15px;
+                    }
+                    font-size: smaller;
+                }
+            }
+        }
+    }    
 }
