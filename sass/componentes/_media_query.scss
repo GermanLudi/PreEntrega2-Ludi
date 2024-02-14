@@ -1,0 +1,217 @@
+
+@import "mixin";
+
+/* MQ para desktop */
+  @media screen and (min-width: 1024px){
+    main{
+        .titulo_index{
+            h1{
+            font-size: 50px;            
+            }
+        }
+        .titulo{
+            h1{
+            font-size: 50px;            
+            }
+        }
+        .container_main{
+            grid-template-columns: repeat(2,1fr); 
+            .main_img_home{
+                img{
+                    padding: 5px;
+                    height: 100%;
+                    width: 100%;
+                                
+                    }  
+            }
+            .main_text_home{
+                font-size: 25px;
+                padding: 15px;
+                width: 100%;
+                text-align: justify;
+            }
+        }
+        .containter_galeria{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr; 
+        }
+        .container_acerca_de{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            .empresa_joven{
+                margin: 25px;                 
+                .container_text_home{
+                    .titulo_2{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+                .container_img_home{
+                    img{
+                        // INCLUYENDO MIXIN C/PARAMETROS
+                        // img-radius($width,$border-radius,$margin-bottom)
+                        @include img-radius(400px,50%,5%);
+                        padding: 5px;
+                        height: 400px;                        
+                    }
+                    p{  
+                        width: 100%;
+                    }
+                }
+            }
+            .soluciones_a_medida{
+                margin: 25px;
+                .container_text_home{
+                    .titulo_2{
+                        h2{           
+                            text-align: center;
+                        }
+                    }
+                }
+                .container_img_home{
+                    img{
+                        // INCLUYENDO MIXIN C/PARAMETROS
+                        // img-radius($width,$border-radius,$margin-bottom)
+                        @include img-radius(400px,50%,5%);
+                        padding: 5px;
+                        height: 400px
+                    }
+                    p{  
+                        width: 100%;
+                    }
+                }
+            }
+            .amplia_experiencia{
+                margin: 25px;
+                .container_text_home{
+                    .titulo_2{
+                        h2{
+                            text-align: center;
+                        }
+                    }
+                }
+                .container_img_home{              
+                    img{
+                        // INCLUYENDO MIXIN C/PARAMETROS
+                        // img-radius($width,$border-radius,$margin-bottom)
+                        @include img-radius(400px,50%,5%);
+                        padding: 5px;
+                        height: 400px;
+                    }
+                    p{  
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+        .containter_productos{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            
+            div {
+                img{
+                width: 100%;
+                height: 100%;
+                padding: 1%;
+                }
+            }    
+        }  
+    }     
+}
+
+  /* MQ para Tablets y phablets */
+  @media screen and (min-width:576px)and(max-width: 767px){
+    // body{
+    //     background-color: tomato;
+    // }
+    main{
+        .titulo_index{
+            h1{
+            font-size: 33px;            
+            }            
+        }
+        .titulo{
+            h1{
+            font-size: 40px;            
+            }
+        }
+        .container_main{
+            grid-template-columns: 1fr; 
+            .main_img_home{
+                img{
+                    padding: 5px;
+                    height: 100%;
+                    width: 100%;
+                                
+                    }  
+            }
+            .main_text_home{
+                font-size: 25px;
+                padding: 15px;
+                width: 100%;
+                text-align: justify;
+            }
+        }
+        .containter_galeria{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr;        
+        }
+        .containter_productos{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            div {
+                img{
+                width: 100%;
+                height: 100%;
+                padding: 1%;
+                }
+            }    
+        }
+        .container_form{
+            .form_wrap{
+                .cantact_info{
+                    display: none;
+                }
+                .form_contact{
+                    width: 100%;
+                    h2{
+                        font-size: 25px;
+                    }
+                    font-size: large;
+                }
+            }
+        }
+    }    
+}
+
+  /* MQ para mobile */
+  @media screen and (min-width:100px)and(max-width: 400px){
+    // body{
+    //     background-color:silver;
+    // }
+    main{
+        .titulo_index{
+            h1{
+            font-size: 20px;            
+            }            
+        }
+        .container_form{
+            .form_wrap{
+                .cantact_info{
+                    display: none;
+                }
+                .form_contact{
+                    width: 100%;
+                    h2{
+                        font-size: 15px;
+                    }
+                    font-size: smaller;
+                }
+            }
+        }
+    }    
+}

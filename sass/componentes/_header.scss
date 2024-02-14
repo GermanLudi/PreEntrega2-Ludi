@@ -1,0 +1,25 @@
+// importar variables
+@import "../base/variables";
+
+//  HEADER 
+header{
+    .container_header{
+        display: grid;    
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: $color-principal-header;
+        justify-items: center;
+        
+            .hdr_container_logo{
+                text-align: center;
+                padding-top: 10px;
+                background-color: $color-principal-header;
+                .hdr_img_logo{    
+                    height: $height-logo;    
+                }
+            }
+            .hdr_menu{
+                font-size: 20px;
+            }
+    }
+}

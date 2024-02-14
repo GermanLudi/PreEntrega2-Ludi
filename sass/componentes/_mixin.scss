@@ -1,0 +1,14 @@
+@mixin img-radius($width,$border-radius,$margin-bottom){
+    width: $width;
+    border-radius: $border-radius;
+    margin-bottom: $margin-bottom;
+}  
+
+
+@mixin grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}        
