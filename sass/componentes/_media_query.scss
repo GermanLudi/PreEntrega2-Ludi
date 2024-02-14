@@ -158,7 +158,12 @@
         }
         .containter_galeria{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 1fr;        
+            grid-template-rows: 1fr;
+            div{
+                margin-top: 10px;
+                width: 90%;
+                height: 90%;
+            }        
         }
         .containter_productos{
             display: grid;
@@ -198,6 +203,15 @@
             h1{
             font-size: 20px;            
             }            
+        }
+        .containter_galeria{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            div{
+                margin-top: 10px;
+                width: 90%;
+                height: 90%;
+            }        
         }
         .container_form{
             .form_wrap{

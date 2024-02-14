@@ -1,0 +1,13 @@
+%animacion_de_caja{
+
+div{
+    margin-top: 10px;
+    width: 90%;
+    height: 100%;
+    }
+        
+div:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    }
+}
