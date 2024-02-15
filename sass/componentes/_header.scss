@@ -11,15 +11,35 @@ header{
         justify-items: center;
         
             .hdr_container_logo{
+                
                 text-align: center;
                 padding-top: 10px;
                 background-color: $color-principal-header;
-                .hdr_img_logo{    
-                    height: $height-logo;    
-                }
+                //animacion
+                animation: latido infinite 5s delay 1s;                
             }
+                        
             .hdr_menu{
                 font-size: 20px;
             }
     }
+}
+
+@keyframes latido {
+    0%{
+        transform: scale(1);
+    }
+    10%{
+        transform: scale(1.1);
+    }
+    20%{
+        transform: scale(1);
+    }
+    40%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }

@@ -3,6 +3,17 @@
 
 /* MQ para desktop */
   @media screen and (min-width: 1024px){
+    
+    header{
+        .container_header{                        
+                .hdr_container_logo{                    
+                    .hdr_img_logo{    
+                        height: $height-logo-desktop;    
+                    }
+                }                
+        }
+    }
+
     main{
         .titulo_index{
             h1{
@@ -125,9 +136,15 @@
 
   /* MQ para Tablets y phablets */
   @media screen and (min-width:576px)and(max-width: 767px){
-    // body{
-    //     background-color: tomato;
-    // }
+    header{
+        .container_header{                        
+                .hdr_container_logo{                    
+                    .hdr_img_logo{    
+                        height: $height-logo-tablet;    
+                    }
+                }                
+        }
+    }
     main{
         .titulo_index{
             h1{
@@ -195,9 +212,15 @@
 
   /* MQ para mobile */
   @media screen and (min-width:100px)and(max-width: 400px){
-    // body{
-    //     background-color:silver;
-    // }
+    header{
+        .container_header{                        
+                .hdr_container_logo{                    
+                    .hdr_img_logo{    
+                        height: $height-logo-mobile;    
+                    }
+                }                
+        }
+    }
     main{
         .titulo_index{
             h1{
