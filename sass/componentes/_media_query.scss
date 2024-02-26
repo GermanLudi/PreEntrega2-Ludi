@@ -135,7 +135,8 @@
 }
 
   /* MQ para Tablets y phablets */
-  @media screen and (min-width:576px)and(max-width: 767px){
+  @media screen and (min-width:576px)and(max-width: 1023px){
+
     header{
         .container_header{                        
                 .hdr_container_logo{                    
@@ -167,7 +168,7 @@
                     }  
             }
             .main_text_home{
-                font-size: 25px;
+                font-size: 21px;
                 padding: 15px;
                 width: 100%;
                 text-align: justify;
@@ -211,7 +212,7 @@
 }
 
   /* MQ para mobile */
-  @media screen and (min-width:100px)and(max-width: 400px){
+  @media screen and (min-width:100px)and(max-width: 575px){
     header{
         .container_header{                        
                 .hdr_container_logo{                    

@@ -54,9 +54,6 @@ header .container_header .hdr_container_logo a div:hover, main .containter_galer
   transition: 0.5s;
   transform: scale(1.1); }
 
-body {
-  background: radial-gradient(#FFFFFF, #efebeb); }
-
 main .titulo_index h1 {
   margin-top: 20px;
   color: #6579eb;
@@ -226,7 +223,7 @@ main .container_contacto {
       padding: 1%; } }
 
 /* MQ para Tablets y phablets */
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 1023px) {
   header .container_header .hdr_container_logo .hdr_img_logo {
     height: 350px; }
   main .titulo_index h1 {
@@ -240,7 +237,7 @@ main .container_contacto {
       height: 100%;
       width: 100%; }
     main .container_main .main_text_home {
-      font-size: 25px;
+      font-size: 21px;
       padding: 15px;
       width: 100%;
       text-align: justify; }
@@ -267,7 +264,7 @@ main .container_contacto {
       font-size: 25px; } }
 
 /* MQ para mobile */
-@media screen and (min-width: 100px) and (max-width: 400px) {
+@media screen and (min-width: 100px) and (max-width: 575px) {
   header .container_header .hdr_container_logo .hdr_img_logo {
     height: 200px; }
   main .titulo_index h1 {
