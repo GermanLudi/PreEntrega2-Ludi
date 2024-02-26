@@ -4,6 +4,8 @@
 //  HEADER 
 header{
     .container_header{
+        //animacion
+        
         display: grid;    
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -14,9 +16,10 @@ header{
                 
                 text-align: center;
                 padding-top: 10px;
-                background-color: $color-principal-header;
-                //animacion
-                animation: latido infinite 5s delay 1s;                
+                background-color: $color-principal-header;   
+                a{
+                    @extend %animacion_de_caja;
+                }                                           
             }
                         
             .hdr_menu{

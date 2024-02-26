@@ -14,8 +14,7 @@ header .container_header {
   header .container_header .hdr_container_logo {
     text-align: center;
     padding-top: 10px;
-    background-color: #DADADA;
-    animation: latido infinite 5s delay 1s; }
+    background-color: #DADADA; }
   header .container_header .hdr_menu {
     font-size: 20px; }
 
@@ -46,12 +45,12 @@ footer .container_footer {
     width: 40px; }
 
 /* TODOS LOS MAIN PAGES */
-main .containter_galeria div, main .containter_productos div {
+header .container_header .hdr_container_logo a div, main .containter_galeria div, main .containter_productos div {
   margin-top: 10px;
   width: 90%;
   height: 100%; }
 
-main .containter_galeria div:hover, main .containter_productos div:hover {
+header .container_header .hdr_container_logo a div:hover, main .containter_galeria div:hover, main .containter_productos div:hover {
   transition: 0.5s;
   transform: scale(1.1); }
 
