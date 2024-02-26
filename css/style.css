@@ -55,6 +55,9 @@ main .containter_galeria div:hover, main .containter_productos div:hover {
   transition: 0.5s;
   transform: scale(1.1); }
 
+body {
+  background: radial-gradient(#FFFFFF, #efebeb); }
+
 main .titulo_index h1 {
   margin-top: 20px;
   color: #6579eb;
@@ -96,28 +99,37 @@ main .container_acerca_de {
   grid-template-columns: 1fr; }
   main .container_acerca_de .empresa_joven .container_text_home .titulo_2 h2 {
     color: gold; }
-  main .container_acerca_de .empresa_joven .container_img_home img {
-    width: 100%;
-    border-radius: 10%;
-    margin-bottom: 5%; }
-  main .container_acerca_de .empresa_joven .container_img_home p {
-    width: 100%; }
+  main .container_acerca_de .empresa_joven .container_img_home {
+    text-align: center; }
+    main .container_acerca_de .empresa_joven .container_img_home img {
+      width: 100%;
+      border-radius: 10%;
+      margin-bottom: 5%; }
+    main .container_acerca_de .empresa_joven .container_img_home p {
+      text-align: justify;
+      width: 100%; }
   main .container_acerca_de .soluciones_a_medida .container_text_home .titulo_2 h2 {
     color: skyblue; }
-  main .container_acerca_de .soluciones_a_medida .container_img_home img {
-    width: 100%;
-    border-radius: 10%;
-    margin-bottom: 5%; }
-  main .container_acerca_de .soluciones_a_medida .container_img_home p {
-    width: 100%; }
+  main .container_acerca_de .soluciones_a_medida .container_img_home {
+    text-align: center; }
+    main .container_acerca_de .soluciones_a_medida .container_img_home img {
+      width: 100%;
+      border-radius: 10%;
+      margin-bottom: 5%; }
+    main .container_acerca_de .soluciones_a_medida .container_img_home p {
+      text-align: justify;
+      width: 100%; }
   main .container_acerca_de .amplia_experiencia .container_text_home .titulo_2 h2 {
     color: tomato; }
-  main .container_acerca_de .amplia_experiencia .container_img_home img {
-    width: 100%;
-    border-radius: 10%;
-    margin-bottom: 5%; }
-  main .container_acerca_de .amplia_experiencia .container_img_home p {
-    width: 100%; }
+  main .container_acerca_de .amplia_experiencia .container_img_home {
+    text-align: center; }
+    main .container_acerca_de .amplia_experiencia .container_img_home img {
+      width: 100%;
+      border-radius: 10%;
+      margin-bottom: 5%; }
+    main .container_acerca_de .amplia_experiencia .container_img_home p {
+      text-align: justify;
+      width: 100%; }
 
 main .containter_productos {
   display: grid;

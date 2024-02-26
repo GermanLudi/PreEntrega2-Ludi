@@ -2,6 +2,10 @@
 @import "mixin";
 @import "extend";
 
+body{
+    background: radial-gradient(#FFFFFF,#efebeb,);
+}
+
 main{
     .titulo_index{
         h1{
@@ -63,11 +67,13 @@ main{
                 }
             }
             .container_img_home{
+                text-align: center;
                 img{    
                     // INCLUYENDO MIXIN C/PARAMETROS
-                    @include img-radius(100%,10%,5%);                  
+                    @include img-radius(100%,10%,5%);                                      
                 }
                 p{  
+                    text-align: justify;
                     width: 100%;
                 }
             }
@@ -81,11 +87,13 @@ main{
                 }
             }
             .container_img_home{
+                text-align: center;
                 img{
                     // INCLUYENDO MIXIN C/PARAMETROS
                     @include img-radius(100%,10%,5%);
                 }
                 p{
+                    text-align: justify;
                     width: 100%;
                 }
             }
@@ -99,11 +107,13 @@ main{
                 }
             }
             .container_img_home{
+                text-align: center;
                 img{
                     // INCLUYENDO MIXIN C/PARAMETROS
                     @include img-radius(100%,10%,5%);
                 }
                 p{
+                    text-align: justify;
                     width: 100%;
                 }
             }
