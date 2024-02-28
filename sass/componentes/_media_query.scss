@@ -2,7 +2,7 @@
 @import "mixin";
 
 /* MQ para desktop */
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1025px){
     
     header{
         .container_header{                        
@@ -135,7 +135,7 @@
 }
 
   /* MQ para Tablets y phablets */
-  @media screen and (min-width:576px)and(max-width: 1023px){
+  @media screen and (min-width:576px)and(max-width: 1024px){
 
     header{
         .container_header{                        
@@ -193,6 +193,89 @@
                 padding: 1%;
                 }
             }    
+        }
+        .container_acerca_de{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            align-items: center;
+            .empresa_joven{
+                margin: 25px;                 
+                .container_text_home{
+                    .titulo_2{
+                        h2{
+                            font-size: 3rem;
+                            text-align: center;
+                        }
+                    }
+                }
+                .container_img_home{
+                    img{
+                        // INCLUYENDO MIXIN C/PARAMETROS
+                        // img-radius($width,$border-radius,$margin-bottom)
+                        @include img-radius(600px,10%,5%);
+                        padding: 5px;
+                        height: 400px;                        
+                    }
+                    p{  
+                        width: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .soluciones_a_medida{
+                margin: 25px;
+                .container_text_home{
+                    .titulo_2{
+                        h2{
+                            font-size: 3rem;
+                            text-align: center;
+                        }
+                    }
+                }
+                .container_img_home{
+                    img{
+                        // INCLUYENDO MIXIN C/PARAMETROS
+                        // img-radius($width,$border-radius,$margin-bottom)
+                        @include img-radius(600px,10%,5%);
+                        padding: 5px;
+                        height: 400px;                        
+                    }
+                    p{  
+                        width: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .amplia_experiencia{
+                margin: 25px;
+                .container_text_home{
+                    .titulo_2{
+                        h2{
+                            font-size: 3rem;
+                            text-align: center;
+                        }
+                    }
+                }
+                .container_img_home{              
+                    img{
+                        // INCLUYENDO MIXIN C/PARAMETROS
+                        // img-radius($width,$border-radius,$margin-bottom)
+                        @include img-radius(600px,10%,5%);
+                        padding: 5px;
+                        height: 400px;                        
+                    }
+                    p{  
+                        width: 100%;
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            
+        }
+        .containter_galeria{
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr; 
         }
         .container_form{
             .form_wrap{

@@ -94,34 +94,37 @@ main .container_acerca_de {
   display: grid;
   grid-template-columns: 1fr; }
   main .container_acerca_de .empresa_joven .container_text_home .titulo_2 h2 {
+    text-align: center;
     color: gold; }
   main .container_acerca_de .empresa_joven .container_img_home {
     text-align: center; }
     main .container_acerca_de .empresa_joven .container_img_home img {
       width: 100%;
-      border-radius: 10%;
+      border-radius: 5%;
       margin-bottom: 5%; }
     main .container_acerca_de .empresa_joven .container_img_home p {
       text-align: justify;
       width: 100%; }
   main .container_acerca_de .soluciones_a_medida .container_text_home .titulo_2 h2 {
+    text-align: center;
     color: skyblue; }
   main .container_acerca_de .soluciones_a_medida .container_img_home {
     text-align: center; }
     main .container_acerca_de .soluciones_a_medida .container_img_home img {
       width: 100%;
-      border-radius: 10%;
+      border-radius: 5%;
       margin-bottom: 5%; }
     main .container_acerca_de .soluciones_a_medida .container_img_home p {
       text-align: justify;
       width: 100%; }
   main .container_acerca_de .amplia_experiencia .container_text_home .titulo_2 h2 {
+    text-align: center;
     color: tomato; }
   main .container_acerca_de .amplia_experiencia .container_img_home {
     text-align: center; }
     main .container_acerca_de .amplia_experiencia .container_img_home img {
       width: 100%;
-      border-radius: 10%;
+      border-radius: 5%;
       margin-bottom: 5%; }
     main .container_acerca_de .amplia_experiencia .container_img_home p {
       text-align: justify;
@@ -152,7 +155,7 @@ main .container_contacto {
 
 /* Media Query */
 /* MQ para desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   header .container_header .hdr_container_logo .hdr_img_logo {
     height: 300px; }
   main .titulo_index h1 {
@@ -223,7 +226,7 @@ main .container_contacto {
       padding: 1%; } }
 
 /* MQ para Tablets y phablets */
-@media screen and (min-width: 576px) and (max-width: 1023px) {
+@media screen and (min-width: 576px) and (max-width: 1024px) {
   header .container_header .hdr_container_logo .hdr_img_logo {
     height: 350px; }
   main .titulo_index h1 {
@@ -255,6 +258,56 @@ main .container_contacto {
       width: 100%;
       height: 100%;
       padding: 1%; }
+  main .container_acerca_de {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center; }
+    main .container_acerca_de .empresa_joven {
+      margin: 25px; }
+      main .container_acerca_de .empresa_joven .container_text_home .titulo_2 h2 {
+        font-size: 3rem;
+        text-align: center; }
+      main .container_acerca_de .empresa_joven .container_img_home img {
+        width: 600px;
+        border-radius: 10%;
+        margin-bottom: 5%;
+        padding: 5px;
+        height: 400px; }
+      main .container_acerca_de .empresa_joven .container_img_home p {
+        width: 100%;
+        font-size: 1.5rem; }
+    main .container_acerca_de .soluciones_a_medida {
+      margin: 25px; }
+      main .container_acerca_de .soluciones_a_medida .container_text_home .titulo_2 h2 {
+        font-size: 3rem;
+        text-align: center; }
+      main .container_acerca_de .soluciones_a_medida .container_img_home img {
+        width: 600px;
+        border-radius: 10%;
+        margin-bottom: 5%;
+        padding: 5px;
+        height: 400px; }
+      main .container_acerca_de .soluciones_a_medida .container_img_home p {
+        width: 100%;
+        font-size: 1.5rem; }
+    main .container_acerca_de .amplia_experiencia {
+      margin: 25px; }
+      main .container_acerca_de .amplia_experiencia .container_text_home .titulo_2 h2 {
+        font-size: 3rem;
+        text-align: center; }
+      main .container_acerca_de .amplia_experiencia .container_img_home img {
+        width: 600px;
+        border-radius: 10%;
+        margin-bottom: 5%;
+        padding: 5px;
+        height: 400px; }
+      main .container_acerca_de .amplia_experiencia .container_img_home p {
+        width: 100%;
+        font-size: 1.5rem; }
+  main .containter_galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; }
   main .container_form .form_wrap .cantact_info {
     display: none; }
   main .container_form .form_wrap .form_contact {
