@@ -120,9 +120,7 @@
             
         }
         .containter_productos{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            
+            grid-template-columns: repeat(4,1fr);          
             div {
                 img{
                 width: 100%;
@@ -136,7 +134,6 @@
 
   /* MQ para Tablets y phablets */
   @media screen and (min-width:576px)and(max-width: 1024px){
-
     header{
         .container_header{                        
                 .hdr_container_logo{                    
@@ -175,16 +172,17 @@
             }
         }
         .containter_galeria{
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(2,1fr) ;
             grid-template-rows: 1fr;
             div{
-                margin-top: 10px;
-                width: 90%;
-                height: 90%;
+                img{
+                    margin-top: 10px;
+                    width: 90%;
+                    height: 90%;
+                }
             }        
         }
         .containter_productos{
-            display: grid;
             grid-template-columns: repeat(2,1fr);
             div {
                 img{
